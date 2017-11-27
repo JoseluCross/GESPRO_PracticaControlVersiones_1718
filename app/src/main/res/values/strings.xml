@@ -175,7 +175,6 @@
     <string name="condition_962">Hurricane</string>
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
 
-
     <!--+++++++++++++++-->
     <!-- General Icons -->
     <!--+++++++++++++++-->
@@ -400,7 +399,6 @@
     <!-- Monitoring notification text [CHAR LIMIT=100] -->
     <string name="monitoring_notification_text">Monitoring hive…</string>
 
-
     <!--++++++++++++++++++++-->
     <!-- Monitoring Settings-->
     <!--++++++++++++++++++++-->
@@ -444,7 +442,6 @@
     <integer name="pref_min_area_max">399</integer>
     <!-- Default value in SharedPreferences for min area [CHAR LIMIT=NONE] -->
     <integer name="pref_min_area_default">15</integer>
-
 
     <!-- Label for the max area preference [CHAR LIMIT=30] -->
     <string name="pref_max_area_label">Max. area bee</string>
@@ -512,7 +509,6 @@
     <!-- Value in SharedPreferences for frame rate 5min [CHAR LIMIT=NONE] -->
     <string name="pref_frame_rate_5min" translatable="false">300000</string>
 
-
     <!--++++++++++-->
     <!-- Settings -->
     <!--++++++++++-->
@@ -557,6 +553,14 @@
     <!-- Data deleted successfully message [CHAR LIMIT=100] -->
     <string name="all_data_deleted_msg">Data deleted!</string>
 
+    <!--+++++++++++++++-->
+    <!-- Notifications -->
+    <!--+++++++++++++++-->
+
+    <!-- Monitoring channel [CHAR LIMIT=100] -->
+    <string name="not_channel_monitoring">Monitoring</string>
+    <!-- Monitoring channel description [CHAR LIMIT=300] -->
+    <string name="not_channel_monitoring_desc">Monitoring related notifications</string>
 
     <!--+++++++++++++++++++++-->
     <!-- Share app & feedback-->
@@ -578,6 +582,7 @@
     <!--+++++++-->
     <!-- About -->
     <!--+++++++-->
+
     <!-- GoBees app [CHAR LIMIT=100] -->
     <string name="gobees_app" translatable="false">GoBees App</string>
     <!-- App version [CHAR LIMIT=100] -->
@@ -856,7 +861,6 @@
         ]]>
     </string>
 
-
     <!--+++++++++++++++++++++-->
     <!-- Generate random data-->
     <!--+++++++++++++++++++++-->
@@ -870,3 +874,4 @@
     <!-- Sample hive notes [CHAR LIMIT=30] -->
     <string name="sample_hive_notes">Check if it has varroa.</string>
 </resources>
+

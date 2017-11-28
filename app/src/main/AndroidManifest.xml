@@ -22,16 +22,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
         android:theme="@style/AppTheme"
         tools:targetApi="o">
-=======
->>>>>>> Stashed changes
-        android:appCategory="productivity"
-        android:theme="@style/AppTheme">
->>>>>>> master
         <activity
             android:name=".splash.SplashActivity"
             android:theme="@style/SplashTheme">

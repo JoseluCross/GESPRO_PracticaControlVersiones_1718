@@ -19,18 +19,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'jacoco-android'
 apply plugin: 'realm-android'
-apply plugin: 'io.fabric'
-
-// Get signing config
-def keystorePropertiesFile = rootProject.file("secrets/keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-
-
-// Get signing config
-def keystorePropertiesFile = rootProject.file("app/keys/keystore.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 
 // Get signing config
@@ -48,41 +36,13 @@ android {
 
         minSdkVersion 19
         targetSdkVersion 26
-<<<<<<< Updated upstream
 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> master
->>>>>>> Stashed changes
         versionCode 11
         versionName "v1.1"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        manifestPlaceholders = [
-                crashlyticsKey: keystoreProperties['CrashlyticsKey']
-        ]
-        buildConfigField 'String', 'COMMIT_HASH', "\"${getCommitHash()}\""
-        buildConfigField 'String', 'BUILD_DATE', "\"${getBuildDate()}\""
-        buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', keystoreProperties['OpenWeatherMapApiKey']
     }
 
-    signingConfigs {
-        debug {
-            keyAlias keystoreProperties['keyAliasDebug']
-            keyPassword keystoreProperties['keyPasswordDebug']
-            storeFile file(keystoreProperties['storeFileDebug'])
-            storePassword keystoreProperties['storePasswordDebug']
-        }
-        relase {
-            storeFile file(keystoreProperties['storeFileRelease'])
-            storePassword keystoreProperties['storePasswordRelease']
-            keyAlias keystoreProperties['keyAliasRelease']
-            keyPassword keystoreProperties['keyPasswordRelease']
-        }
-    }
-
-<<<<<<< Updated upstream
     signingConfigs {
         relase {
             keyAlias keystoreProperties['keyAlias']
@@ -95,42 +55,10 @@ android {
     buildTypes {
         debug {
             testCoverageEnabled true
-=======
-<<<<<<< HEAD
-    buildTypes {
-        debug {
-            testCoverageEnabled true
-            aaptOptions {
-                cruncherEnabled = false // No img optimization in debug
-            }
-=======
-    signingConfigs {
-        relase {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
-    }
-
-    buildTypes {
-        debug {
-            testCoverageEnabled true
->>>>>>> master
->>>>>>> Stashed changes
         }
         release {
             shrinkResources true // Remove unused resources
             minifyEnabled true // Enable proguard (shrinks, optimizes and obfuscates code)
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-            debuggable false
-            jniDebuggable false
-            renderscriptDebuggable false
-=======
->>>>>>> master
->>>>>>> Stashed changes
             proguardFiles getDefaultProguardFile('proguard-android.txt'),
                     'proguard-guava.pro',
                     'proguard-mpandroidchart.pro',
@@ -142,11 +70,6 @@ android {
         }
     }
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
     buildTypes.each {
         // OpenWeatherMap key (stored in [USER_HOME]/.gradle/gradle.properties)
         it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY', OpenWeatherMapApiKey
@@ -154,22 +77,12 @@ android {
 
     // Mock: stubs out the service layer completely and returns a fake dataset
     // Prod: production version
->>>>>>> master
     productFlavors {
-        // Mock: mock data layer
         mock {
             applicationIdSuffix = ".mock"
-            resValue('string', 'app_name', getAppName() + '-mock')
-            ext.enableCrashlytics = false
         }
-        // Dev: dev environment
-        dev {
-            applicationIdSuffix = ".dev"
-            resValue('string', 'app_name', getAppName() + '-dev')
-        }
-        // Prod: production environment
         prod {
-            resValue('string', 'app_name', getAppName())
+
         }
     }
 
@@ -199,7 +112,6 @@ android {
 
     // Lint checks
     lintOptions {
-        abortOnError false
         disable 'SetJavaScriptEnabled', 'MissingTranslation'
     }
 }
@@ -237,33 +149,13 @@ dependencies {
     // Permission Utils (check runtime permissions) : https://github.com/rebus007/PermissionUtils
     compile 'rebus:permission-utils:1.0.6'
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     //----------------------------------------------------------------------------------------------
     // Debugging / logging dependencies
     //----------------------------------------------------------------------------------------------
 
     // Timber (logger) : https://github.com/JakeWharton/timber
     compile 'com.jakewharton.timber:timber:4.5.1'
-    // Crashlytics (Crash reporting) : https://docs.fabric.io/android/changelog.html#crashlytics
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
-        transitive = true;
-    }
 
-=======
->>>>>>> Stashed changes
-+    //----------------------------------------------------------------------------------------------
-+    // Debugging / logging dependencies
-+    //----------------------------------------------------------------------------------------------
-+
-+    // Timber (logger) : https://github.com/JakeWharton/timber
-+    compile 'com.jakewharton.timber:timber:4.5.1'
-+
-<<<<<<< Updated upstream
-=======
->>>>>>> master
->>>>>>> Stashed changes
     //----------------------------------------------------------------------------------------------
     // Testing Dependencies
     //----------------------------------------------------------------------------------------------
@@ -339,30 +231,3 @@ sonarqube {
         property "sonar.jacoco.reportMissing.force.zero", true
     }
 }
-
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-/**
- * Returns git commit long hash.
- */
-private String getCommitHash() {
-    return 'git rev-parse HEAD'.execute([], project.rootDir).text.trim();
-}
-
-/**
- * Returns build date.
- */
-private static String getBuildDate() {
-    return new GregorianCalendar().format("yyyy-MM-dd'T'HH:mm.ss'Z'");
-}
-
-/**
- * Returns app name.
- */
-private static String getAppName() {
-    return "GoBees"
-}
-=======
->>>>>>> master
->>>>>>> Stashed changes

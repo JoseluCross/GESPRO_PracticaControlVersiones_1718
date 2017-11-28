@@ -46,7 +46,7 @@
     <!-- Message when user doesn't grant permission [CHAR LIMIT=100] -->
     <string name="permission_request_denied">The app does not have permissions to use this feature.</string>
     <!-- Loading message [CHAR LIMIT=100] -->
-    <string name="loading_msg">Loading…</string>
+    <string name="loading_msg">Loadingï¿½</string>
 
 
     <!--+++++++++-->
@@ -77,9 +77,9 @@
     <string name="default_wind" translatable="false">\? km/h</string>
     <!-- Default value rain/snow [CHAR LIMIT=NONE] -->
     <string name="default_rain_snow" translatable="false">\? mm</string>
-    <!-- Format temperature in Celsius unit. Ej: 30ºC [CHAR LIMIT=NONE] -->
+    <!-- Format temperature in Celsius unit. Ej: 30ï¿½C [CHAR LIMIT=NONE] -->
     <string name="format_temperature_celsius"><xliff:g id="temp">%1.0f</xliff:g>\u00B0C</string>
-    <!-- Format temperature in Fahrenheit unit. Ej: 30ºC [CHAR LIMIT=NONE] -->
+    <!-- Format temperature in Fahrenheit unit. Ej: 30ï¿½C [CHAR LIMIT=NONE] -->
     <string name="format_temperature_fahrenheit"><xliff:g id="temp">%1.0f</xliff:g>\u00B0F</string>
     <!-- Format humidity  in percentage. Ej: 18% [CHAR LIMIT=NONE] -->
     <string name="format_humidity_percentage"><xliff:g id="hum">%1.0f</xliff:g>%%</string>
@@ -178,9 +178,9 @@
     <!--+++++++++++++++-->
 
     <!-- Description of icon ic_more_vert [CHAR LIMIT=100] -->
-    <string name="more_icon">More…</string>
+    <string name="more_icon">Moreï¿½</string>
     <!-- Description of enter icon ic_enter [CHAR LIMIT=100] -->
-    <string name="enter_icon">Enter…</string>
+    <string name="enter_icon">Enterï¿½</string>
     <!-- Description of date icon ic_date [CHAR LIMIT=25] -->
     <string name="date_icon">Date</string>
     <!-- Description of weather icon [CHAR LIMIT=25] -->
@@ -255,9 +255,9 @@
     <!-- Apiary location longitude input [CHAR LIMIT=50] -->
     <string name="apiary_location__longitude_hint">Longitude (e.g. -3.697586)</string>
     <!-- Apiary notes input [apiary_location__latitude_hint LIMIT=50] -->
-    <string name="apiary_notes_hint">Notes…</string>
+    <string name="apiary_notes_hint">Notesï¿½</string>
     <!-- Msg shown when we're searching for gps [CHAR LIMIT=100] -->
-    <string name="searching_gps_message">Searching for GPS…</string>
+    <string name="searching_gps_message">Searching for GPSï¿½</string>
     <!-- Error msg shown when name is empty [CHAR LIMIT=100] -->
     <string name="empty_apiary_message">Apiary name cannot be empty!</string>
     <!-- Error msg shown when location is not valid [CHAR LIMIT=100] -->
@@ -323,7 +323,7 @@
     <!-- Hive name input [CHAR LIMIT=50] -->
     <string name="hive_name_hint">Name</string>
     <!-- Hive notes input [CHAR LIMIT=50] -->
-    <string name="hive_notes_hint">Notes…</string>
+    <string name="hive_notes_hint">Notesï¿½</string>
     <!-- Error msg shown when name is empty [CHAR LIMIT=100] -->
     <string name="empty_hive_message">Hive name cannot be empty!</string>
     <!-- Error msg shown when it's not possible to save the hive [CHAR LIMIT=100] -->
@@ -361,7 +361,7 @@
         Are you sure you want to deny this permission?
     </string>
     <!-- Default note text [CHAR LIMIT=100] -->
-    <string name="default_notes">Notes…</string>
+    <string name="default_notes">Notesï¿½</string>
     <!-- No notes text [CHAR LIMIT=100] -->
     <string name="no_notes">No notes</string>
     <!-- General info title [CHAR LIMIT=100] -->
@@ -382,7 +382,7 @@
     <!-- Date shown as title of a recording activity [CHAR LIMIT=30] -->
     <string name="recording_date_format">EEE d MMM, yyyy</string>
     <!-- Number of bees [CHAR LIMIT=30] -->
-    <string name="num_bees">Nº bees</string>
+    <string name="num_bees">Nï¿½ bees</string>
 
     <!--++++++++++++-->
     <!-- Monitoring -->
@@ -391,18 +391,12 @@
     <!-- Description of start record icon [CHAR LIMIT=100] -->
     <string name="start_record_icon">Start record icon</string>
     <!-- Text shown when the monitoring service is running [CHAR LIMIT=150] -->
-    <string name="monitoring_text">Monitoring…\n You can switch off the screen.</string>
+    <string name="monitoring_text">Monitoringï¿½\n You can switch off the screen.</string>
     <!-- Default number of bees [CHAR LIMIT=NONE] -->
     <string name="num_bees_default" translatable="false">0</string>
     <!-- Monitoring notification text [CHAR LIMIT=100] -->
-<<<<<<< HEAD
-    <string name="monitoring_notification_text">Monitoring hive…</string>
-=======
-    <string name="monitoring_notification_text">Monitoring hiveâ€¦</string>
-<<<<<<< Updated upstream
-=======
->>>>>>> master
->>>>>>> Stashed changes
+    <string name="monitoring_notification_text">Monitoring hiveï¿½</string>
+
 
     <!--++++++++++++++++++++-->
     <!-- Monitoring Settings-->
@@ -527,9 +521,9 @@
     <!-- Label for the weather units preference [CHAR LIMIT=30] -->
     <string name="pref_weather_units_label">Weather Units</string>
     <!-- Label for metric option in weather unit preference [CHAR LIMIT=25] -->
-    <string name="pref_weather_units_label_metric">Metric (\u00B0C, km/h…)</string>
+    <string name="pref_weather_units_label_metric">Metric (\u00B0C, km/hï¿½)</string>
     <!-- Label for imperial option in weather unit preference [CHAR LIMIT=25] -->
-    <string name="pref_weather_units_label_imperial">Imperial (\u00B0F, mph…)</string>
+    <string name="pref_weather_units_label_imperial">Imperial (\u00B0F, mphï¿½)</string>
     <!-- Key name for weather unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
     <string name="pref_weather_units_key" translatable="false">units</string>
     <!-- Value in SharedPreferences for metric weather unit option [CHAR LIMIT=NONE] -->
@@ -582,7 +576,7 @@
     <!-- Feedback email subject [CHAR LIMIT=100] -->
     <string name="gobees_email_subject" translatable="false">[Feedback]</string>
     <!-- Feedback email body [CHAR LIMIT=100] -->
-    <string name="gobees_email_body">Write your feedback here…</string>
+    <string name="gobees_email_body">Write your feedback hereï¿½</string>
 
     <!--+++++++-->
     <!-- About -->

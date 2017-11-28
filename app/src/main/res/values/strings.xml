@@ -23,8 +23,6 @@
     <!-- Generals  -->
     <!--+++++++++++-->
 
-    <!-- App name [CHAR LIMIT=NONE] -->
-    <string name="app_name" translatable="false">GoBees</string>
     <!-- App name - Go [CHAR LIMIT=NONE] -->
     <string name="gobees_go" translatable="false">Go</string>
     <!-- App name - Bees [CHAR LIMIT=NONE] -->
@@ -48,7 +46,7 @@
     <!-- Message when user doesn't grant permission [CHAR LIMIT=100] -->
     <string name="permission_request_denied">The app does not have permissions to use this feature.</string>
     <!-- Loading message [CHAR LIMIT=100] -->
-    <string name="loading_msg">Loadingâ€¦</string>
+    <string name="loading_msg">Loading…</string>
 
 
     <!--+++++++++-->
@@ -79,9 +77,9 @@
     <string name="default_wind" translatable="false">\? km/h</string>
     <!-- Default value rain/snow [CHAR LIMIT=NONE] -->
     <string name="default_rain_snow" translatable="false">\? mm</string>
-    <!-- Format temperature in Celsius unit. Ej: 30ÂºC [CHAR LIMIT=NONE] -->
+    <!-- Format temperature in Celsius unit. Ej: 30ºC [CHAR LIMIT=NONE] -->
     <string name="format_temperature_celsius"><xliff:g id="temp">%1.0f</xliff:g>\u00B0C</string>
-    <!-- Format temperature in Fahrenheit unit. Ej: 30ÂºC [CHAR LIMIT=NONE] -->
+    <!-- Format temperature in Fahrenheit unit. Ej: 30ºC [CHAR LIMIT=NONE] -->
     <string name="format_temperature_fahrenheit"><xliff:g id="temp">%1.0f</xliff:g>\u00B0F</string>
     <!-- Format humidity  in percentage. Ej: 18% [CHAR LIMIT=NONE] -->
     <string name="format_humidity_percentage"><xliff:g id="hum">%1.0f</xliff:g>%%</string>
@@ -180,9 +178,9 @@
     <!--+++++++++++++++-->
 
     <!-- Description of icon ic_more_vert [CHAR LIMIT=100] -->
-    <string name="more_icon">Moreâ€¦</string>
+    <string name="more_icon">More…</string>
     <!-- Description of enter icon ic_enter [CHAR LIMIT=100] -->
-    <string name="enter_icon">Enterâ€¦</string>
+    <string name="enter_icon">Enter…</string>
     <!-- Description of date icon ic_date [CHAR LIMIT=25] -->
     <string name="date_icon">Date</string>
     <!-- Description of weather icon [CHAR LIMIT=25] -->
@@ -257,9 +255,9 @@
     <!-- Apiary location longitude input [CHAR LIMIT=50] -->
     <string name="apiary_location__longitude_hint">Longitude (e.g. -3.697586)</string>
     <!-- Apiary notes input [apiary_location__latitude_hint LIMIT=50] -->
-    <string name="apiary_notes_hint">Notesâ€¦</string>
+    <string name="apiary_notes_hint">Notes…</string>
     <!-- Msg shown when we're searching for gps [CHAR LIMIT=100] -->
-    <string name="searching_gps_message">Searching for GPSâ€¦</string>
+    <string name="searching_gps_message">Searching for GPS…</string>
     <!-- Error msg shown when name is empty [CHAR LIMIT=100] -->
     <string name="empty_apiary_message">Apiary name cannot be empty!</string>
     <!-- Error msg shown when location is not valid [CHAR LIMIT=100] -->
@@ -325,7 +323,7 @@
     <!-- Hive name input [CHAR LIMIT=50] -->
     <string name="hive_name_hint">Name</string>
     <!-- Hive notes input [CHAR LIMIT=50] -->
-    <string name="hive_notes_hint">Notesâ€¦</string>
+    <string name="hive_notes_hint">Notes…</string>
     <!-- Error msg shown when name is empty [CHAR LIMIT=100] -->
     <string name="empty_hive_message">Hive name cannot be empty!</string>
     <!-- Error msg shown when it's not possible to save the hive [CHAR LIMIT=100] -->
@@ -363,7 +361,7 @@
         Are you sure you want to deny this permission?
     </string>
     <!-- Default note text [CHAR LIMIT=100] -->
-    <string name="default_notes">Notesâ€¦</string>
+    <string name="default_notes">Notes…</string>
     <!-- No notes text [CHAR LIMIT=100] -->
     <string name="no_notes">No notes</string>
     <!-- General info title [CHAR LIMIT=100] -->
@@ -384,7 +382,7 @@
     <!-- Date shown as title of a recording activity [CHAR LIMIT=30] -->
     <string name="recording_date_format">EEE d MMM, yyyy</string>
     <!-- Number of bees [CHAR LIMIT=30] -->
-    <string name="num_bees">NÂº bees</string>
+    <string name="num_bees">Nº bees</string>
 
     <!--++++++++++++-->
     <!-- Monitoring -->
@@ -393,11 +391,18 @@
     <!-- Description of start record icon [CHAR LIMIT=100] -->
     <string name="start_record_icon">Start record icon</string>
     <!-- Text shown when the monitoring service is running [CHAR LIMIT=150] -->
-    <string name="monitoring_text">Monitoringâ€¦\n You can switch off the screen.</string>
+    <string name="monitoring_text">Monitoring…\n You can switch off the screen.</string>
     <!-- Default number of bees [CHAR LIMIT=NONE] -->
     <string name="num_bees_default" translatable="false">0</string>
     <!-- Monitoring notification text [CHAR LIMIT=100] -->
+<<<<<<< HEAD
+    <string name="monitoring_notification_text">Monitoring hive…</string>
+=======
     <string name="monitoring_notification_text">Monitoring hiveâ€¦</string>
+<<<<<<< Updated upstream
+=======
+>>>>>>> master
+>>>>>>> Stashed changes
 
     <!--++++++++++++++++++++-->
     <!-- Monitoring Settings-->
@@ -522,9 +527,9 @@
     <!-- Label for the weather units preference [CHAR LIMIT=30] -->
     <string name="pref_weather_units_label">Weather Units</string>
     <!-- Label for metric option in weather unit preference [CHAR LIMIT=25] -->
-    <string name="pref_weather_units_label_metric">Metric (\u00B0C, km/hâ€¦)</string>
+    <string name="pref_weather_units_label_metric">Metric (\u00B0C, km/h…)</string>
     <!-- Label for imperial option in weather unit preference [CHAR LIMIT=25] -->
-    <string name="pref_weather_units_label_imperial">Imperial (\u00B0F, mphâ€¦)</string>
+    <string name="pref_weather_units_label_imperial">Imperial (\u00B0F, mph…)</string>
     <!-- Key name for weather unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
     <string name="pref_weather_units_key" translatable="false">units</string>
     <!-- Value in SharedPreferences for metric weather unit option [CHAR LIMIT=NONE] -->
@@ -577,7 +582,7 @@
     <!-- Feedback email subject [CHAR LIMIT=100] -->
     <string name="gobees_email_subject" translatable="false">[Feedback]</string>
     <!-- Feedback email body [CHAR LIMIT=100] -->
-    <string name="gobees_email_body">Write your feedback hereâ€¦</string>
+    <string name="gobees_email_body">Write your feedback here…</string>
 
     <!--+++++++-->
     <!-- About -->
@@ -663,7 +668,6 @@
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at
         <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache v2.0</a>.</p>
-
         <p>Unless required by applicable law or agreed to in writing, software
         distributed under the License is distributed on an "AS IS" BASIS,
         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
@@ -680,10 +684,8 @@
         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
         copies of the Software, and to permit persons to whom the Software is
         furnished to do so, subject to the following conditions:</p>
-
         <p>The above copyright notice and this permission notice shall be included in all
         copies or substantial portions of the Software.</p>
-
         <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
         EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
         MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -698,7 +700,6 @@
         <![CDATA[
         <p>Redistribution and use in source and binary forms, with or without modification,
         are permitted provided that the following conditions are met:</p>
-
         <p>
             * Redistributions of source code must retain the above copyright notice,
               this list of conditions and the following disclaimer.<br>
@@ -709,7 +710,6 @@
               may be used to endorse or promote products derived from this software
               without specific prior written permission.
         </p>
-
         <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
         "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
         LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
@@ -728,7 +728,6 @@
         <![CDATA[
         <p>The project is licensed under a
         Creative Commons Attribution-ShareAlike 3.0 Unported License.</p>
-
         <p>You should have received a copy of the license along with this
         work. If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.</p>
         ]]>

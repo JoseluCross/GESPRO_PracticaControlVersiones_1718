@@ -34,6 +34,7 @@ buildscript {
 }
 
 plugins {
+    
     // SonarQube : https://plugins.gradle.org/plugin/org.sonarqube
     id "org.sonarqube" version "2.5"
 }

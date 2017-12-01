@@ -315,4 +315,3 @@ public class MonitoringFragment extends Fragment implements MonitoringContract.V
         return true;
     }
 }
-
